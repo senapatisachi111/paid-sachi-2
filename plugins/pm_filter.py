@@ -404,13 +404,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-        ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('「ＪＫ ＭＯＶＩＥＳ™」', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('𝗚𝗥𝗢𝗨𝗣👥', url='https://t.me/+iiJvauon_6Q1Njk1'),
+            InlineKeyboardButton('𝗦𝗨𝗕-𝗚𝗥𝗢𝗨𝗣➕', url='https://t.me/+NEwBKqnZqfljNTY1')
+            ],[
+            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+CZZlpLbNSR00MmRl'),
+            InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
+            ],[
+            InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', callback_data='movss'),
+            InlineKeyboardButton('', callback_data='http://t.me/JK_SER')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -438,9 +441,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
-        ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
         ]]
@@ -481,6 +481,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "movss":
+        await query.answer("👉ഗ്രൂപ്പിൽ ജോയിൻ ചെയ്തതിനു ശേഷം, ആവിശ്യം ഉള്ള സിനിമ ചോദിക്കുക. ബോട്ട് സിനിമ അയച്ചു തരുന്നത് ആകും. എന്തേലും ഇഷ്യൂ ഉണ്ടേൽ OWNERന് മെസ്സേജ് ചെയ്യുക.എല്ലാവരും സഹകരിക്കുക.🤝", show_alert=True)
+        
     elif query.data == "autofilter":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
