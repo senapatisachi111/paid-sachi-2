@@ -51,7 +51,7 @@ async def start(client, message):
             InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
-            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', callback_data='http://t.me/JK_SER')
+            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='http://t.me/JK_SER')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -100,7 +100,7 @@ async def start(client, message):
             InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
-            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', callback_data='http://t.me/JK_SER')
+            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='http://t.me/JK_SER')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
