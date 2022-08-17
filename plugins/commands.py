@@ -50,7 +50,7 @@ async def start(client, message):
             InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+CZZlpLbNSR00MmRl'),
             InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
             ],[
-            InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', callback_data='movss'),
+            InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
             InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', callback_data='http://t.me/JK_SER')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -84,7 +84,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**⚠️താഴെ കാണുന്ന ചാനലിൽ ജോയിൻ ചെയ്തതിനു ശേഷം, ♻️ 𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡 ♻️ CLICK ചെയ്യുക സിനിമ ലഭിക്കുന്നത് ആകും.**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -99,7 +99,7 @@ async def start(client, message):
             InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+CZZlpLbNSR00MmRl'),
             InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
             ],[
-            InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', callback_data='movss'),
+            InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
             InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', callback_data='http://t.me/JK_SER')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
