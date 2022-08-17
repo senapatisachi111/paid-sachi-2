@@ -413,7 +413,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
-            InlineKeyboardButton('', callback_data='http://t.me/JK_SER')
+            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='http://t.me/JK_SER')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
