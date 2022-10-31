@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+CZZlpLbNSR00MmRl')
+                InlineKeyboardButton('MAIN CHANNEL', url='https://t.me/MoviesNSeriesSNS')
             ],
             [
                 InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,16 +42,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('「ＪＫ ＭＯＶＩＥＳ™」', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('「SN™」', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗚𝗥𝗢𝗨𝗣👥', url='https://t.me/+iiJvauon_6Q1Njk1'),
-            InlineKeyboardButton('𝗦𝗨𝗕-𝗚𝗥𝗢𝗨𝗣➕', url='https://t.me/+NEwBKqnZqfljNTY1')
+            InlineKeyboardButton('MAIN GROUP', url='https://t.me/MoviesNSeriesGroupSNS'),
+            InlineKeyboardButton('BACKUP GROUP', url='https://t.me/MoviesNSeriesGroupSNS2')
             ],[
-            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+CZZlpLbNSR00MmRl'),
-            InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
+            InlineKeyboardButton('MAIN CHANNEL', url='https://t.me/MoviesNSeriesSNS'),
+            InlineKeyboardButton('UPDATES CHANNEL', url='https://t.me/MoviesNSeriesSNS2')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
-            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='http://t.me/JK_SER')
+            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='https://t.me/SNSNS01')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -84,23 +84,23 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**⚠️താഴെ കാണുന്ന ചാനലിൽ ജോയിൻ ചെയ്തതിനു ശേഷം, ♻️ 𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡 ♻️ CLICK ചെയ്യുക സിനിമ ലഭിക്കുന്നത് ആകും.**",
+            text="**After joining the channel below, CLICK TRY AGAIN to get the movie. THANK YOU.**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('「ＪＫ ＭＯＶＩＥＳ™」', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('「SN™」', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗚𝗥𝗢𝗨𝗣👥', url='https://t.me/+iiJvauon_6Q1Njk1'),
-            InlineKeyboardButton('𝗦𝗨𝗕-𝗚𝗥𝗢𝗨𝗣➕', url='https://t.me/+NEwBKqnZqfljNTY1')
+            InlineKeyboardButton('MAIN GROUP', url='https://t.me/MoviesNSeriesGroupSNS'),
+            InlineKeyboardButton('BACKUP GROUP', url='https://t.me/MoviesNSeriesGroupSNS2')
             ],[
-            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+CZZlpLbNSR00MmRl'),
-            InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
+            InlineKeyboardButton('MAIN CHANNEL', url='https://t.me/MoviesNSeriesSNS'),
+            InlineKeyboardButton('UPDATES CHANNEL', url='https://t.me/MoviesNSeriesSNS2')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
-            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='http://t.me/JK_SER')
+            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='https://t.me/SNSNS01')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
