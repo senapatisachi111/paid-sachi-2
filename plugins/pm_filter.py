@@ -404,16 +404,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('「ＪＫ ＭＯＶＩＥＳ™」', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('「SN™」', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗚𝗥𝗢𝗨𝗣👥', url='https://t.me/+iiJvauon_6Q1Njk1'),
-            InlineKeyboardButton('𝗦𝗨𝗕-𝗚𝗥𝗢𝗨𝗣➕', url='https://t.me/+NEwBKqnZqfljNTY1')
+            InlineKeyboardButton('MAIN GROUP', url='https://t.me/MoviesNSeriesGroupSNS'),
+            InlineKeyboardButton('BACKUP GROUP', url='https://t.me/MoviesNSeriesGroupSNS2')
             ],[
-            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+CZZlpLbNSR00MmRl'),
-            InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
+            InlineKeyboardButton('MAIN CHANNEL', url='https://t.me/MoviesNSeriesSNS'),
+            InlineKeyboardButton('UPDATES CHANNEL', url='https://t.me/MoviesNSeriesSNS2')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
-            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='http://t.me/JK_SER')
+            InlineKeyboardButton('𝐎𝐖𝐍𝐄𝐑👤', url='https://t.me/SNSNS01')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -482,7 +482,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "movss":
-        await query.answer("👉ഗ്രൂപ്പിൽ ജോയിൻ ചെയ്തതിനു ശേഷം, ആവിശ്യം ഉള്ള സിനിമ ചോദിക്കുക. ബോട്ട് സിനിമ അയച്ചു തരുന്നത് ആകും. എന്തേലും ഇഷ്യൂ ഉണ്ടേൽ OWNERന് മെസ്സേജ് ചെയ്യുക.എല്ലാവരും സഹകരിക്കുക.🤝", show_alert=True)
+        await query.answer("After joining the group, ask for the desired movie with correct spelling. The bot will send the movie. Message the OWNER if there is any issue.PLEASE cooperate. Thank You😊", show_alert=True)
         
     elif query.data == "autofilter":
         buttons = [[
