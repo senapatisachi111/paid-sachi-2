@@ -711,10 +711,10 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Hello {message.from_user.mention} നിങ്ങൾ ഗ്രൂപ്പിൽ ചോദിച്ച {search} എന്ന സിനിമയുടെ ലിസ്റ്റ് താഴെ കൊടുത്തിട്ട് ഉണ്ട്. ആദ്യത്തെ ലിസ്റ്റിൽ ഇല്ലങ്കിൽ സിനിമ NEXT » ബട്ടൺ ക്ലിക്ക് ചെയ്തു അടുത്ത പേജ് കൂടെ നോക്കുക. #Press How To Download"
+        cap = f"Hello {message.from_user.mention} Below is the list of  movie you asked in the group {search}. If the movie is not in the first list, click the NEXT⏩ button and go to the next page"
     if imdb and imdb.get('poster'):
         try:
-            fmsg = await message.reply_photo('https://telegra.ph/file/2852538a958144259930b.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            fmsg = await message.reply_photo('https://telegra.ph/file/b93305257310cc526a5bc.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
