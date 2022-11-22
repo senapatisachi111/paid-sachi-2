@@ -18,7 +18,7 @@ You can deploy this bot anywhere.
 <a href="https://heroku.com/deploy?template=https://github.com/premiumheroku/paid-sachi">
 
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/Cgpp_Y?referralCode=TSPli3)
 </a>
 
 </p>
